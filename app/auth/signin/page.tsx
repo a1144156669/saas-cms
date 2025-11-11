@@ -88,7 +88,7 @@ export default function SignInPage() {
                     type={showPassword ? 'text' : 'password'}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="请输入密码"
+                    placeholder="admin123"
                     required
                   />
                   <button
