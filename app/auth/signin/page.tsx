@@ -73,7 +73,7 @@ export default function SignInPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="admin@dramini.com"
+                  placeholder="请输入邮箱"
                   required
                 />
               </div>
@@ -88,7 +88,7 @@ export default function SignInPage() {
                     type={showPassword ? 'text' : 'password'}
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="admin123"
+                    placeholder="请输入密码"
                     required
                   />
                   <button
