@@ -24,16 +24,7 @@ async function main() {
         provider: 'email'
       }
     })
-    // 创建管理员用户
-    const adminPassword = await prisma.password.upsert({
-      where: { email: 'admin@dramini.com' },
-      update: {},
-      create: {
-        email: 'admin@dramini.com',
-        name: '系统管理员',
-        provider: 'email'
-      }
-    })
+   
 
     // 创建测试标题
     const title = await prisma.title.upsert({
